@@ -1,5 +1,5 @@
 {
-  "name": "@mz-hub/mem-ts",
+  "name": "@mzhub/mem-ts",
   "version": "0.1.0",
   "description": "Persistent memory for AI agents - A tiered memory system with fact extraction and conflict resolution",
   "main": "dist/index.js",

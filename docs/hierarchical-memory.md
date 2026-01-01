@@ -122,7 +122,7 @@ await hmm.flushRawLogs(userId);
 ### Enable HMM
 
 ```typescript
-import { HierarchicalMemory } from "@mz-hub/mem-ts";
+import { HierarchicalMemory } from "@mzhub/mem-ts";
 
 const hmm = new HierarchicalMemory(adapter, provider, {
   enabled: true,

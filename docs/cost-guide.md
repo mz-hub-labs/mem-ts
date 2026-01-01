@@ -114,7 +114,7 @@ const memory = new MemoryOS({
 ### 2. Limit Extractions with BudgetManager
 
 ```typescript
-import { BudgetManager } from "@mz-hub/mem-ts";
+import { BudgetManager } from "@mzhub/mem-ts";
 
 const budget = new BudgetManager({
   maxTokensPerUserPerDay: 50000, // Cap daily token usage
@@ -163,7 +163,7 @@ With HMM compression:
 **Savings: 90%** on context injection costs.
 
 ```typescript
-import { HierarchicalMemory } from "@mz-hub/mem-ts";
+import { HierarchicalMemory } from "@mzhub/mem-ts";
 
 const hmm = new HierarchicalMemory(adapter, provider, { enabled: true });
 
@@ -252,7 +252,7 @@ const memory = new MemoryOS({
 Track your actual usage:
 
 ```typescript
-import { TokenTracker } from "@mz-hub/mem-ts";
+import { TokenTracker } from "@mzhub/mem-ts";
 
 const tracker = new TokenTracker();
 

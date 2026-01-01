@@ -126,13 +126,13 @@ mem-ts doesn't just store facts. It thinks like a brain.
 ### Install
 
 ```bash
-npm install @mz-hub/mem-ts
+npm install @mzhub/mem-ts
 ```
 
 ### Use
 
 ```typescript
-import { MemoryOS, JSONFileAdapter } from "@mz-hub/mem-ts";
+import { MemoryOS, JSONFileAdapter } from "@mzhub/mem-ts";
 
 const memory = new MemoryOS({
   llm: { provider: "openai", apiKey: process.env.OPENAI_API_KEY },
@@ -165,7 +165,7 @@ That's it. The agent now remembers.
 For advanced use cases, enable the **Memory Pyramid** — compressing thousands of facts into wisdom.
 
 ```typescript
-import { HierarchicalMemory } from "@mz-hub/mem-ts";
+import { HierarchicalMemory } from "@mzhub/mem-ts";
 
 const hmm = new HierarchicalMemory(adapter, provider, { enabled: true });
 

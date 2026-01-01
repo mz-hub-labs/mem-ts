@@ -106,7 +106,7 @@ interface MemoryFact {
 **mem-ts Implementation:** `DeepSleepWorker` runs on a schedule.
 
 ```typescript
-import { DeepSleepWorker } from "@mz-hub/mem-ts";
+import { DeepSleepWorker } from "@mzhub/mem-ts";
 
 const worker = new DeepSleepWorker(provider, adapter, {
   lookbackHours: 24,
@@ -143,7 +143,7 @@ interface MemoryFact {
 - **Long-term:** Consolidated (> 24 hours, > 5 accesses)
 
 ```typescript
-import { ConsolidationWorker } from "@mz-hub/mem-ts";
+import { ConsolidationWorker } from "@mzhub/mem-ts";
 
 const consolidator = new ConsolidationWorker(adapter, {
   shortTermHours: 1,
@@ -164,7 +164,7 @@ await consolidator.pruneShortTerm(userId, 24); // Delete unused short-term
 **mem-ts Implementation:** `ContradictionDetector` flags conflicts before storage.
 
 ```typescript
-import { ContradictionDetector } from "@mz-hub/mem-ts";
+import { ContradictionDetector } from "@mzhub/mem-ts";
 
 const detector = new ContradictionDetector(adapter, provider, {
   autoResolve: true,
@@ -193,7 +193,7 @@ interface MemoryFact {
 ```
 
 ```typescript
-import { AssociationEngine } from "@mz-hub/mem-ts";
+import { AssociationEngine } from "@mzhub/mem-ts";
 
 const engine = new AssociationEngine(adapter, provider, {
   similarityThreshold: 0.7,
@@ -219,7 +219,7 @@ const { nodes, edges } = await engine.getGraph(userId);
 **mem-ts Implementation:** `PredictiveEngine` detects patterns.
 
 ```typescript
-import { PredictiveEngine } from "@mz-hub/mem-ts";
+import { PredictiveEngine } from "@mzhub/mem-ts";
 
 const predictor = new PredictiveEngine(adapter, provider, {
   minOccurrences: 3,
@@ -265,7 +265,7 @@ import {
   ContradictionDetector,
   AssociationEngine,
   PredictiveEngine,
-} from "@mz-hub/mem-ts";
+} from "@mzhub/mem-ts";
 
 // Core memory system
 const memory = new MemoryOS({ llm, adapter });
